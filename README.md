@@ -1,5 +1,7 @@
 # KitoWidgets
 
+**[Documentation](https://wyksofts-inc.github.io/KitoWidgets/documentation/kitowidgets/)**
+
 Home Screen and Lock Screen widgets for SwiftUI, ready to drop into a widget extension: stats with
 sparklines, Activity-style rings, self-ticking countdowns, interactive to-do lists and counters,
 gauges, quotes and photos, weather, balances and quick actions. Each view has a layout for every family it
