@@ -254,10 +254,12 @@ struct KitoArcGauge: View {
                     .stroke(gradient, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
                     .opacity(0.25)
                     .rotationEffect(.degrees(135))
+                    .flipsForRightToLeftLayoutDirection(true) // mirror the arc with its knob in RTL
                 Circle()
                     .trim(from: 0, to: Self.sweep * max(fraction, 0.001))
                     .stroke(gradient, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
                     .rotationEffect(.degrees(135))
+                    .flipsForRightToLeftLayoutDirection(true) // mirror the arc with its knob in RTL
                     .widgetAccentable()
                 Circle()
                     .fill(.white)
