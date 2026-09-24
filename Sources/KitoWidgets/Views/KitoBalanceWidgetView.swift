@@ -145,7 +145,7 @@ public struct KitoBalanceWidgetView: View {
     @ViewBuilder private var changeLine: some View {
         if let change {
             HStack(spacing: 3) {
-                Image(systemName: change >= 0 ? "arrow.up.right" : "arrow.down.right")
+                Image(systemName: change >= 0 ? "arrow.up.forward" : "arrow.down.forward")
                     .font(.system(size: 9, weight: .heavy))
                 Text(hidesAmounts ? "Today" : "\(change >= 0 ? "+" : "−")\(money.string(for: abs(change))) today")
                     .font(.system(size: 11, weight: .semibold))

@@ -194,6 +194,12 @@ Inside a preview frame, interactive rows use `Button(intent:)`, which runs the i
 - `KitoCountdown` — phases, transition dates, day counts and short remaining text.
 - `KitoWidgetMetrics` — each family's size, corner radius and margin.
 
+## Right-to-left
+
+- Widgets render in the widget's own layout direction, so layouts, the sparkline and its latest-value dot, and the gauge bar mirror automatically.
+- Progress rings and the arc gauge mirror as a whole in RTL (start at the top / fill from the other side, knob on the arc).
+- Trend arrows use `arrow.up.forward` / `arrow.down.forward` / `arrow.forward`, so they agree with the mirrored sparkline.
+
 ## Installation
 
 ```swift

@@ -140,6 +140,7 @@ struct KitoRingView: View {
             }
         }
         .rotationEffect(.degrees(-90))
+        .flipsForRightToLeftLayoutDirection(true) // Circle doesn't mirror but rotation does; keeps the start at the top in RTL
         .padding(lineWidth / 2)
     }
 }
@@ -161,9 +162,9 @@ struct KitoDeltaBadge: View {
 
     private var symbol: String {
         switch delta.direction {
-        case .up: return "arrow.up.right"
-        case .down: return "arrow.down.right"
-        case .flat: return "arrow.right"
+        case .up: return "arrow.up.forward"
+        case .down: return "arrow.down.forward"
+        case .flat: return "arrow.forward"
         }
     }
 
